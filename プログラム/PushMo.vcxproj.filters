@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\Title">
+      <UniqueIdentifier>{3f4902a5-0f1f-47c0-ae4e-539b8bfc5f27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Title\Title_UI">
+      <UniqueIdentifier>{65862dbe-4b58-4a6d-9377-533521c9977a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameUI">
+      <UniqueIdentifier>{6d8223a9-f569-47b2-911d-d62148083b50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game">
+      <UniqueIdentifier>{a78b23f0-3dae-46cc-bbff-1bf306e870f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Object">
+      <UniqueIdentifier>{dc60dd8a-4220-4847-aca5-1b9fbdd446fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Object\Player">
+      <UniqueIdentifier>{4457805b-87df-4315-99f9-8ad6944fae8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Object\Stage">
+      <UniqueIdentifier>{57bc0a69-5113-4d1c-9db9-929a1693edb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Object\Enemy">
+      <UniqueIdentifier>{182f5091-acd0-4816-b360-5f8941d8305a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene">
+      <UniqueIdentifier>{4818bad9-0eff-474a-91ef-80f109684894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Sound">
+      <UniqueIdentifier>{5443ecc5-a0f1-4e90-b64d-c1ffe42f3f5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Effect">
+      <UniqueIdentifier>{d11fc1d2-aff3-448b-b629-ed8c86088db8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Object\Gimmick">
+      <UniqueIdentifier>{b9385b24-04c2-46a5-a0a2-c4e5d3278d47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Game\Result">
+      <UniqueIdentifier>{2767e7f2-1c79-43c9-b092-263dbd0fafde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Shader">
+      <UniqueIdentifier>{91f4546a-ff86-4ee3-82b2-56881fe7bf5e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\UI\UIBase.cpp">
+      <Filter>ソース ファイル\GameUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\UI\GameUI\GameUI.cpp">
+      <Filter>ソース ファイル\GameUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Title\Title.cpp">
+      <Filter>ソース ファイル\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Game.cpp">
+      <Filter>ソース ファイル\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Title\Title_UI\Title.UI.cpp">
+      <Filter>ソース ファイル\Title\Title_UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Object\ObjBase.cpp">
+      <Filter>ソース ファイル\Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Object\Stage\Background.cpp">
+      <Filter>ソース ファイル\Game\Object\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Object\Stage\Sand.cpp">
+      <Filter>ソース ファイル\Game\Object\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Object\Stage\Stage.cpp">
+      <Filter>ソース ファイル\Game\Object\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Object\Player\Player.cpp">
+      <Filter>ソース ファイル\Game\Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Object\Enemy\Enemy.cpp">
+      <Filter>ソース ファイル\Game\Object\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Scene.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Sound\wavread.cpp">
+      <Filter>ソース ファイル\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Sound\Sound.cpp">
+      <Filter>ソース ファイル\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Effect\Effect.cpp">
+      <Filter>ソース ファイル\Game\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Object\Gimmick\Pot.cpp">
+      <Filter>ソース ファイル\Game\Object\Gimmick</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Object\ObjList.cpp">
+      <Filter>ソース ファイル\Game\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\Result\Result.cpp">
+      <Filter>ソース ファイル\Game\Result</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Shader\Shader.cpp">
+      <Filter>ソース ファイル\Shader</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\GameData.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UI\UIBase.h">
+      <Filter>ソース ファイル\GameUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UI\GameUI\GameUI.h">
+      <Filter>ソース ファイル\GameUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Title\Title.h">
+      <Filter>ソース ファイル\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Game.h">
+      <Filter>ソース ファイル\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Title\Title_UI\Title_UI.h">
+      <Filter>ソース ファイル\Title\Title_UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Object\ObjBase.h">
+      <Filter>ソース ファイル\Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Object\Stage\Background.h">
+      <Filter>ソース ファイル\Game\Object\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Object\Stage\Sand.h">
+      <Filter>ソース ファイル\Game\Object\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Object\Stage\Stage.h">
+      <Filter>ソース ファイル\Game\Object\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Object\Player\Player.h">
+      <Filter>ソース ファイル\Game\Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Object\Enemy\Enemy.h">
+      <Filter>ソース ファイル\Game\Object\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Scene.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Sound\wavread.h">
+      <Filter>ソース ファイル\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Sound\Sound.h">
+      <Filter>ソース ファイル\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Effect\Effect.h">
+      <Filter>ソース ファイル\Game\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Object\Gimmick\Pot.h">
+      <Filter>ソース ファイル\Game\Object\Gimmick</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Object\ObjList.h">
+      <Filter>ソース ファイル\Game\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\Result\Result.h">
+      <Filter>ソース ファイル\Game\Result</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Shader\Shader.h">
+      <Filter>ソース ファイル\Shader</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

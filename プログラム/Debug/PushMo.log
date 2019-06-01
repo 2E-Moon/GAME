@@ -1,0 +1,34 @@
+﻿  Effect.cpp
+  Game.cpp
+  Enemy.cpp
+d:\制作・開発\noengine\directx9.0\pushmo\pushmo\source\game\object\enemy\enemy.cpp(56): warning C4244: '引数': 'int' から 'FLOAT' への変換です。データが失われる可能性があります。
+d:\制作・開発\noengine\directx9.0\pushmo\pushmo\source\game\object\enemy\enemy.cpp(90): warning C4244: '引数': 'int' から 'FLOAT' への変換です。データが失われる可能性があります。
+  Pot.cpp
+  ObjBase.cpp
+d:\制作・開発\noengine\directx9.0\pushmo\pushmo\source\game\object\objbase.cpp(88): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+  ObjList.cpp
+  Player.cpp
+d:\制作・開発\noengine\directx9.0\pushmo\pushmo\source\game\object\player\player.cpp(53): warning C4244: '+=': 'float' から 'int' への変換です。データが失われる可能性があります。
+d:\制作・開発\noengine\directx9.0\pushmo\pushmo\source\game\object\player\player.cpp(115): warning C4805: '==': 演算中の 'SHORT' 型と 'bool' 型の混用は安全ではありません
+d:\制作・開発\noengine\directx9.0\pushmo\pushmo\source\game\object\player\player.cpp(165): warning C4244: '=': 'DWORD' から 'float' への変換です。データが失われる可能性があります。
+d:\制作・開発\noengine\directx9.0\pushmo\pushmo\source\game\object\player\player.cpp(189): warning C4244: '=': 'DWORD' から 'float' への変換です。データが失われる可能性があります。
+d:\制作・開発\noengine\directx9.0\pushmo\pushmo\source\game\object\player\player.cpp(387): warning C4101: 'Hit': ローカル変数は 1 度も使われていません。
+d:\制作・開発\noengine\directx9.0\pushmo\pushmo\source\game\object\player\player.cpp(388): warning C4101: 'Dis': ローカル変数は 1 度も使われていません。
+  Background.cpp
+  Sand.cpp
+  Stage.cpp
+  Result.cpp
+  Main.cpp
+  Scene.cpp
+  Shader.cpp
+  Sound.cpp
+  Title.cpp
+  Title.UI.cpp
+  GameUI.cpp
+d:\制作・開発\noengine\directx9.0\pushmo\pushmo\source\ui\gameui\gameui.cpp(110): warning C4244: '引数': 'int' から 'FLOAT' への変換です。データが失われる可能性があります。
+d:\制作・開発\noengine\directx9.0\pushmo\pushmo\source\ui\gameui\gameui.cpp(308): warning C4805: '==': 演算中の 'int' 型と 'bool' 型の混用は安全ではありません
+d:\制作・開発\noengine\directx9.0\pushmo\pushmo\source\ui\gameui\gameui.cpp(462): warning C4805: '==': 演算中の 'int' 型と 'bool' 型の混用は安全ではありません
+d:\制作・開発\noengine\directx9.0\pushmo\pushmo\source\ui\gameui\gameui.cpp(495): warning C4805: '==': 演算中の 'int' 型と 'bool' 型の混用は安全ではありません
+  UIBase.cpp
+  コードを生成中...
+  PushMo.vcxproj -> D:\制作・開発\NoEngine\DirectX9.0\PushMo\Debug\PushMo.exe
