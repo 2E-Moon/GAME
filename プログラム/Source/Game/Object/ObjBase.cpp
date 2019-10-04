@@ -123,7 +123,7 @@ void ObjBase::DrawMesh(LPDIRECT3DDEVICE9 lpD3DDevice, struct XFILE *xFile, D3DXM
 			}
 
 
-			// ※これを呼ばないと、シェーダ側にうまくパラメータがセットされないよ！
+			// ※これを呼ばないとシェーダ側にうまくパラメータがセットされない
 			GAMEDATA.m_SampSh.m_Effect->CommitChanges();
 
 			// メッシュを描画

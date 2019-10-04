@@ -7,11 +7,16 @@
 class Scene {
 public:
 
-	void Init();
-	void Update();
-	void Draw();
-	void Release();
+	//初期化
+	virtual void Init();
+	//更新
+	virtual void Update();
+	//描画
+	virtual void Draw();
+	//解放
+	virtual void Release();
 
+	//シーン切り替え
 	void ChangeScene(int _Mode);
 
 private:

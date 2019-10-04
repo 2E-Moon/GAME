@@ -6,11 +6,16 @@ enum Rank { FIRST, SECOND, THIRD, FOURTH, FIFTH, RANKOUT = 999 };
 class Result {
 public:
 
-	void Init();
-	void Update();
-	void Draw();
-	void Release();
+	//初期化
+	virtual void Init();
+	//更新
+	virtual void Update();
+	//描画
+	virtual void Draw();
+	//解放
+	virtual void Release();
 
+	//ゲッター
 	int Get_FirstScore() { return FirstScore; };
 	int Get_SecondScore() { return SecondScore; };
 	int Get_ThirdScore() { return ThirdScore; };

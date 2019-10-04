@@ -19,41 +19,72 @@
 
 class Game {
 public:
-	void Init();
-	void Update();
-	void Draw();
-	void Release();
+	//初期化
+	virtual void Init();
+	//更新
+	virtual void Update();
+	//描画
+	virtual void Draw();
+	//解放
+	virtual void Release();
 
-	bool Get_GameMode_ChangeFlg() { return GameMode_ChangeFlg; }
-	void Set_GameMode_ChangeFlg(bool _flg) { GameMode_ChangeFlg = _flg; }
 
-	bool Get_GameStartFlg() { return bGame_StartFlg; }
-	void Set_GameStartFlg(bool _flg) { bGame_StartFlg = _flg; }
+	//=============
+	//ゲッター
+	//=============
+	//ゲームモード切替フラグ
+	bool Get_GameMode_ChangeFlg() { return isGameMode_ChangeFlg; }
+	//ゲームスタート判定フラグ
+	bool Get_GameStartFlg() { return isGame_StartFlg; }
+	//ゲーム終了判定フラグ
+	bool Get_GameEndFlg() { return isGame_EndFlg; }
+	//リザルト表示判定フラグ
+	bool Get_ResultFlg() { return isResultFlg; }
 
-	bool Get_GameEndFlg() { return bGame_EndFlg; }
-	void Set_GameEndFlg(bool _flg) { bGame_EndFlg = _flg; }
-
-	bool Get_ResultFlg() { return bResultFlg; }
-	void Set_ResultFlg(bool _flg) { bResultFlg = _flg; }
-
+	//現在のタイム
 	int Get_Time() { return iTime; }
+
+
+
+	//=============
+	//セッター
+	//=============
+	//ゲームモード切替フラグ
+	void Set_GameMode_ChangeFlg(bool _flg) { isGameMode_ChangeFlg = _flg; }
+	//ゲームスタート判定フラグ
+	void Set_GameStartFlg(bool _flg) { isGame_StartFlg = _flg; }
+	//ゲーム終了判定フラグ
+	void Set_GameEndFlg(bool _flg) { isGame_EndFlg = _flg; }
+	//リザルト表示判定フラグ
+	void Set_ResultFlg(bool _flg) { isResultFlg = _flg; }
+
+	//現在のタイム
 	void Set_Time(int _time) { iTime = _time; }
 private:
-
+	//オブジェクトリスト
 	std::shared_ptr<ObjList> ObjectList;
+	//リザルト
+	std::shared_ptr<Result> result;
+	//ゲームUI
 	GameUI g_ui;
 
-	bool bGame_StartFlg = false;
-	bool bGame_EndFlg = false;
+	//ゲームモード切替フラグ
+	bool isGameMode_ChangeFlg = false;
+	//ゲームスタート判定フラグ
+	bool isGame_StartFlg = false;
+	//ゲーム終了判定フラグ
+	bool isGame_EndFlg = false;
 
-	bool bResultFlg = false;
+	//リザルト表示判定フラグ
+	bool isResultFlg = false;
 
+	//ゲーム内タイム
 	int iTime;
 	DWORD ST;
 
-	std::shared_ptr<Result> result;
 
-	bool GameMode_ChangeFlg = false;
+
+	
 };
 
 

@@ -667,7 +667,7 @@ Mesh {
    0.000000;0.000000;0.000000;;
    0.000000;0.000000;0.000000;;
    TextureFilename {
-    "C:\\Users\\Noom\\Desktop\\MilkTexture.png";
+    "Resource/Chara/Texture/MilkTexture.png";
    }
   }
  }

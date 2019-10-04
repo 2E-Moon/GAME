@@ -50,6 +50,8 @@ void Sound::Init()
 	pcmwf.wBitsPerSample = 16;		// 16ビット
 	lpSPrimary->SetFormat(&pcmwf);
 
+
+	//サウンドの設定とWAVファイル読み込み
 	SoundInit();
 
 
@@ -57,17 +59,21 @@ void Sound::Init()
 
 void Sound::SoundInit()
 {
+	//ボリューム
 	lpSPrimary->GetVolume(&vol);
+	//パン
 	lpSPrimary->GetPan(&pan);
+
 	CoInitialize(NULL);
 
-	//ここでサウンドを読みこみ
-//	LoadWAVE(lpCursor, (char *)"Resource/Sound/Cursor.wav");
-//	LoadWAVE(lpDecision, (char *)"Resource/Sound/Decision.wav");
-
+	//===================
+	//サウンドを読みこみ
+	//===================
+	//BGM
 	BGM_Load("Battle", (char *)"Resource/Sound/BGM.wav");
 	BGM_Load("Title", (char *)"Resource/Sound/Title.wav");
 	
+	//SE
 	SE_Load("Hit", (char *)"Resource/Sound/Hit.wav");
 	SE_Load("Attack", (char *)"Resource/Sound/Attack.wav");
 	SE_Load("Jump", (char *)"Resource/Sound/Jump.wav");
@@ -76,8 +82,6 @@ void Sound::SoundInit()
 	SE_Load("Get", (char *)"Resource/Sound/Get.wav");
 	SE_Load("Whistle", (char *)"Resource/Sound/Whistle.wav");
 
-//	lpCursor->GetFrequency(&Hz);
-//	lpDecision->GetFrequency(&Hz);
 
 }
 
@@ -93,23 +97,21 @@ void Sound::Draw()
 
 void Sound::Release()
 {
-//	lpSPrimary->SetVolume(vol);
-//	lpSPrimary->SetPan(pan);
 
 	CoUninitialize();
 
+	//読み込んだBGMとBGMマップの解放
 	for (auto it : m_mapBGM) {
 		it.second->Release();
 	}
 	m_mapBGM.clear();
 
+	//読み込んだSEの解放
 	for (auto it : m_mapSE) {
 		it.second->Release();
 	}
 	m_mapSE.clear();
 
-//	lpCursor->Release();
-//	lpDecision->Release();
 
 	
 	

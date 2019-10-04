@@ -2,10 +2,14 @@
 #define __GameUI_h__
 class GameUI :public UIBase {
 public:
-	void Init();
-	void Update();
-	void Draw();
-	void Release();
+	//‰Šú‰»
+	virtual void Init();
+	//XV
+	virtual void Update();
+	//•`‰æ
+	virtual void Draw();
+	//‰ğ•ú
+	virtual void Release();
 private:
 	void GetPoint();
 
